@@ -75,6 +75,15 @@ jmp start_loop
 `incl %edi` says increment the value in %edi by one. Next, we use direct addressing to copy the second number into the %eax register which holds the current (new) number that will be evaluated. Finally, we do a comparison between the current maximum inside %ebx with this value. If the second value (in %eax) is less than or equal to the first value (it's not a new maximum!) then we will rerun the instructions at `start_loop`. Otherwise, we will update the maximum by moving the new value into the register `%ebx` which holds the maximum!
 
 
+#### Questions
+
+*What's the difference between pseudo-operations or assembler directives and program instructions? Aren't they all ultimately instructions?*
+*How does the assembler know which portion of the source code is the loop? is `start_loop` a special symbol, like `_start`?*
+*What's the difference between `_start` and `_start:`?*
+*What register gets the values from comparison operations?*
+The `%eflags` register.
+
+
 
 
 

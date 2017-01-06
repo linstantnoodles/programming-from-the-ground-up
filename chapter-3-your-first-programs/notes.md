@@ -82,7 +82,13 @@ jmp start_loop
 *What's the difference between `_start` and `_start:`?*
 *What register gets the values from comparison operations?*
 The `%eflags` register.
+*How come when I add numbers greater thant 255 to the list, the output of `echo $?` is weird? For example, if the max is 333, I get an output of 77. If it's 256, I get an output of 0. Huh?*
+* http://www.tldp.org/LDP/abs/html/exitcodes.html
+* http://stackoverflow.com/questions/18536693/what-does-echo-mean-in-bash
+* http://stackoverflow.com/questions/7248031/meaning-of-in-shell-scripts
+* 333 % 256 = 77!
 
+Is some program setting the value of $? to a number between 0 and 255?
 
 
 

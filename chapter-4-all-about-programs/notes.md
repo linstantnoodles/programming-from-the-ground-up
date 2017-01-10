@@ -1,0 +1,5 @@
+* One of the ways we deal with anything complex is to tackle it with a team. In working with complex software, in order for programmers that are part of a team to work independently, there needs to be a splitting of the program into functions with clear responsibilities.
+* Programming goes top down and bottom up. You can go from a big picture, complex program and break it into smaller functions or take small functions and build them up (combine them) to form more complex programs.
+* The smallest functions in a system you write a program for(at the very bottom that are provided by the system which you do not write yourself) are known as primitive functions.
+* A functions return address is where it was called from because when it's done running, its caller needs to continue with whatever comes after.
+* The stack is a region of memory used by the computers functions. Unlike stacks of paper, computer stacks grow down, not up. It's like a reverse stack of paper. When you add to it, it grows downwards (address-wise in the case of the computer).
